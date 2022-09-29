@@ -1,0 +1,25 @@
+
+import random
+user = int(input("what do you choose ? 0 for Rock 1 for paper 2 for scissors\n"))
+game = ["Rock","Paper","Scissors"]
+if user > 2:
+    print("You typed an invalide numbre!")
+print(f"you choose {game[user]}")
+print("-------------------------------------------------------")
+r=int(random.randint(0,2))
+print(f"computer choose {game[r]}")
+print("-------------------------------------------------------")
+if user==0 and r==2:
+    print("you win")
+elif user<r:
+    print("you lose")
+elif user == r:
+    print("Draw")
+elif user==2 and r==0:
+    print("you lose")
+elif user==2 and r==1:
+    print("you win")
+elif user==1 and r==0:
+    print("you win")
+else:
+    print("You typed an invalide numbre!")
