@@ -1,2 +1,2 @@
 # Python-Programing
- Small project using python
+ Small project using python.
